@@ -58,12 +58,12 @@ const TcpClient = () => {
         description: `${description} executed successfully`,
       });
     } catch (error) {
-      const errorResponse = `[${timestamp}] ${description}\nCommand: ${command}\nError: Failed to connect to ${ipAddress}:12345`;
+      const errorResponse = `[${timestamp}] ${description}\nCommand: ${command}\nError: Failed to connect to ${ipAddress}:3000`;
       setResponses(prev => [errorResponse, ...prev]);
       
       toast({
         title: "Connection Failed",
-        description: `Could not connect to ${ipAddress}:12345`,
+        description: `Could not connect to ${ipAddress}:3000`,
         variant: "destructive",
       });
     } finally {
@@ -106,7 +106,7 @@ const TcpClient = () => {
                 className="flex-1"
               />
               <div className="px-3 py-2 bg-gray-100 rounded-md text-sm text-gray-600">
-                :12345
+                :3000
               </div>
             </div>
             {isConnected && (
