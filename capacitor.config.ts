@@ -6,7 +6,7 @@ const config: CapacitorConfig = {
   appName: 'Windows Remote Control',
   webDir: 'dist',
   server: {
-    url: 'https://75d06485-9a33-4516-a5a6-9bab86e80d3e.lovableproject.com?forceHideBadge=true',
+    androidScheme: 'https',
     cleartext: true
   },
   plugins: {
